@@ -54,15 +54,28 @@ public class Stacks {
         stack.pop(); // bo6 removed
         stack.pop(); // cod removed
         System.out.println(stack);
+        // it removes item from the end
 
         // stack assigning to the strings
+        String favgame= stack.pop();
+        System.out.println(favgame);
+        // this showed error in the code as Stack is empty nooww
 
-        String favgame= stack.pop()
+        /*==================================================================================================================================================================================================================================================
+    exception in thread "main" java.util.EmptyStackException
+	at java.base/java.util.Stack.peek(Stack.java:103)
+	at java.base/java.util.Stack.pop(Stack.java:85)
+	at Stacks.main(Stacks.java:60)
+	==========================================================================================================================
+
+         */
 
 
 
 
-        // it removes item from the end
+
+
+
 
     }
  }
