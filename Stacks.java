@@ -51,14 +51,15 @@ public class Stacks {
 
         // remove something from stack
         stack.pop();// minecraft removed
-        stack.pop(); // bo6 removed
-        stack.pop(); // cod removed
+//        stack.pop(); // bo6 removed
+//        stack.pop(); // cod removed
         System.out.println(stack);
         // it removes item from the end
 
         // stack assigning to the strings
         String favgame= stack.pop();
         System.out.println(favgame);
+        System.out.println(stack);
         // this showed error in the code as Stack is empty nooww
 
         /*==================================================================================================================================================================================================================================================
@@ -70,12 +71,55 @@ public class Stacks {
 
          */
 
+// now we dont do pop for the all items
+
+//        stack.push("Minecraft");
+//        stack.push("Call of duty");
+//        stack.push("Black ops 6 ");
+//
+//        String fav2game= stack.pop();
+//        System.out.println(fav2game);
+//        System.out.println(stack);
+
+        //this time the output will be
+        // [ Maybe one of the games ]
+
+        // if i run this now then it will throw exception and error as i am repeating something which is already done
+        //I have tested and it works
+
+        /*    Black ops 6
+[Minecraft, Call of duty]
+here is the expected output where the black ops 6 are considered as the facvgame
+and the rest of the elements in the [] are in the stack So it just poped out the codbo6 pop()
+and others are printed as System.out.println(stack);
+          */
 
 
 
 
+
+        // peek at the stack after adding something new to it
+        stack.push("STEAM");
+        stack.push("Epic games");
+        stack.push("Activison");
+        System.out.println(stack.peek());
+        System.out.println(stack);
+        // it started peeking from the last right now it peeked and printed the Activison
+        // next time it will Epic games
+        // and then the last one
+        // it also not remove the items from it jst display them
+
+
+        // using search in stack
+
+
+        System.out.println(stack.search("STEAM"));
+        System.out.println(stack.search("MINECRAFT"));
+        System.out.println(stack.search("Activison"));
+        System.out.println(stack.search("Epic games"));
 
 
 
     }
  }
+`
