@@ -122,4 +122,3 @@ and others are printed as System.out.println(stack);
 
     }
  }
-`
